@@ -67,7 +67,10 @@ pad1.pack()
 label = tk.Label(window, text="Select the portion where name has to be written.", font=("Helvetica", 18))
 label.pack()
 
-img = ImageTk.PhotoImage(Image.open(rsImgLoc))
+# img = ImageTk.PhotoImage(Image.open(rsImgLoc))
+
+imgtk = ImageTk.PhotoImage(image=PIL.Image.fromarray(rsImgLoc))
+
 canvas = tk.Canvas(window, width=img.width(), height=img.height(),
                    borderwidth=0, highlightthickness=0)
 canvas.pack(expand=True)
