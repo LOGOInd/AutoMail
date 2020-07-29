@@ -6,7 +6,7 @@ import os
 import pickle
 # import imagecrop
 from PIL import ImageTk, Image
-import pandas._libs.ops_dispatch
+# import pandas._libs.ops_dispatch
 dir_path = os.getcwd()
 tk.NoDefaultRoot()
 
@@ -27,7 +27,7 @@ root.rowconfigure(1, weight=1)
 root.title("AutoMail")
 center_window(root, 800, 600)
 
-config = open(os.path.join(os.getcwd() + "src" + "config.dat"), 'wb+')
+config = open(os.path.join(os.getcwd(), "src", "config.dat"), 'wb+')
 pickle.dump({'SENDER_EMAIL': None,
              'SENDER_PASSWORD': None,
              'DATA_PATH': None,
